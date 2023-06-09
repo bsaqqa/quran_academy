@@ -1,5 +1,6 @@
 <?php
 
+use App\Facades\Responder;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
