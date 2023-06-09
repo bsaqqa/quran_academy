@@ -14,7 +14,7 @@
 
 -- Dumping structure for table quran_academy.quran_ayat
 CREATE TABLE IF NOT EXISTS `quran_ayat` (
-  `index` int(4) NOT NULL,
+  `id` int(4) NOT NULL PRIMARY KEY,
   `sura` int(3) NOT NULL DEFAULT '0',
   `aya` int(3) NOT NULL DEFAULT '0',
   `text` text NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `quran_ayat` (
 
 -- Dumping data for table quran_academy.quran_ayat: 6,236 rows
 /*!40000 ALTER TABLE `quran_ayat` DISABLE KEYS */;
-INSERT IGNORE INTO `quran_ayat` (`index`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
+INSERT IGNORE INTO `quran_ayat` (`id`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
 	(1, 1, 1, 'بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ', 'بسم الله الرحمن الرحيم', 1, 1, 1, NULL, NULL, NULL, 1, '1:1', NULL, NULL, NULL, NULL),
 	(2, 1, 2, 'ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ', 'الحمد لله رب العالمين', 1, 1, 1, NULL, NULL, NULL, 1, '1:2', NULL, NULL, NULL, NULL),
 	(3, 1, 3, 'ٱلرَّحْمَٰنِ ٱلرَّحِيمِ', 'الرحمن الرحيم', 1, 1, 1, NULL, NULL, NULL, 1, '1:3', NULL, NULL, NULL, NULL),
@@ -1628,7 +1628,7 @@ INSERT IGNORE INTO `quran_ayat` (`index`, `sura`, `aya`, `text`, `simple`, `juz`
 	(1590, 11, 117, 'وَمَا كَانَ رَبُّكَ لِيُهْلِكَ ٱلْقُرَىٰ بِظُلْمٍ وَأَهْلُهَا مُصْلِحُونَ', 'وما كان ربك ليهلك القرى بظلم وأهلها مصلحون', 12, 24, 234, NULL, NULL, NULL, 94, '11:117', NULL, NULL, NULL, NULL),
 	(1591, 11, 118, 'وَلَوْ شَآءَ رَبُّكَ لَجَعَلَ ٱلنَّاسَ أُمَّةً وَٰحِدَةً وَلَا يَزَالُونَ مُخْتَلِفِينَ', 'ولو شاء ربك لجعل الناس أمة واحدة ولا يزالون مختلفين', 12, 24, 235, NULL, NULL, NULL, 94, '11:118', NULL, NULL, NULL, NULL),
 	(1592, 11, 119, 'إِلَّا مَن رَّحِمَ رَبُّكَ وَلِذَٰلِكَ خَلَقَهُمْ وَتَمَّتْ كَلِمَةُ رَبِّكَ لَأَمْلَأَنَّ جَهَنَّمَ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ أَجْمَعِينَ', 'إلا من رحم ربك ولذلك خلقهم وتمت كلمة ربك لأملأن جهنم من الجنة والناس أجمعين', 12, 24, 235, NULL, NULL, NULL, 94, '11:119', NULL, NULL, NULL, NULL);
-INSERT IGNORE INTO `quran_ayat` (`index`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
+INSERT IGNORE INTO `quran_ayat` (`id`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
 	(1593, 11, 120, 'وَكُلًّا نَّقُصُّ عَلَيْكَ مِنْ أَنۢبَآءِ ٱلرُّسُلِ مَا نُثَبِّتُ بِهِۦ فُؤَادَكَ وَجَآءَكَ فِى هَٰذِهِ ٱلْحَقُّ وَمَوْعِظَةٌ وَذِكْرَىٰ لِلْمُؤْمِنِينَ', 'وكلا نقص عليك من أنباء الرسل ما نثبت به فؤادك وجاءك في هذه الحق وموعظة وذكرى للمؤمنين', 12, 24, 235, NULL, NULL, NULL, 94, '11:120', NULL, NULL, NULL, NULL),
 	(1594, 11, 121, 'وَقُل لِّلَّذِينَ لَا يُؤْمِنُونَ ٱعْمَلُوا۟ عَلَىٰ مَكَانَتِكُمْ إِنَّا عَٰمِلُونَ', 'وقل للذين لا يؤمنون اعملوا على مكانتكم إنا عاملون', 12, 24, 235, NULL, NULL, NULL, 94, '11:121', NULL, NULL, NULL, NULL),
 	(1595, 11, 122, 'وَٱنتَظِرُوٓا۟ إِنَّا مُنتَظِرُونَ', 'وانتظروا إنا منتظرون', 12, 24, 235, NULL, NULL, NULL, 94, '11:122', NULL, NULL, NULL, NULL),
@@ -3890,7 +3890,7 @@ INSERT IGNORE INTO `quran_ayat` (`index`, `sura`, `aya`, `text`, `simple`, `juz`
 	(3851, 37, 63, 'إِنَّا جَعَلْنَٰهَا فِتْنَةً لِّلظَّٰلِمِينَ', 'إنا جعلناها فتنة للظالمين', 23, 45, 448, NULL, NULL, NULL, 179, '37:63', NULL, NULL, NULL, NULL),
 	(3852, 37, 64, 'إِنَّهَا شَجَرَةٌ تَخْرُجُ فِىٓ أَصْلِ ٱلْجَحِيمِ', 'إنها شجرة تخرج في أصل الجحيم', 23, 45, 448, NULL, NULL, NULL, 179, '37:64', NULL, NULL, NULL, NULL),
 	(3853, 37, 65, 'طَلْعُهَا كَأَنَّهُۥ رُءُوسُ ٱلشَّيَٰطِينِ', 'طلعها كأنه رءوس الشياطين', 23, 45, 448, NULL, NULL, NULL, 179, '37:65', NULL, NULL, NULL, NULL);
-INSERT IGNORE INTO `quran_ayat` (`index`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
+INSERT IGNORE INTO `quran_ayat` (`id`, `sura`, `aya`, `text`, `simple`, `juz`, `hezb`, `page`, `word`, `sajde`, `sajde_number`, `rub`, `verse_key`, `theletter`, `sortnozol`, `sortalphabet`, `meccamedinan`) VALUES
 	(3854, 37, 66, 'فَإِنَّهُمْ لَءَاكِلُونَ مِنْهَا فَمَالِـُٔونَ مِنْهَا ٱلْبُطُونَ', 'فإنهم لآكلون منها فمالئون منها البطون', 23, 45, 448, NULL, NULL, NULL, 179, '37:66', NULL, NULL, NULL, NULL),
 	(3855, 37, 67, 'ثُمَّ إِنَّ لَهُمْ عَلَيْهَا لَشَوْبًا مِّنْ حَمِيمٍ', 'ثم إن لهم عليها لشوبا من حميم', 23, 45, 448, NULL, NULL, NULL, 179, '37:67', NULL, NULL, NULL, NULL),
 	(3856, 37, 68, 'ثُمَّ إِنَّ مَرْجِعَهُمْ لَإِلَى ٱلْجَحِيمِ', 'ثم إن مرجعهم لإلى الجحيم', 23, 45, 448, NULL, NULL, NULL, 179, '37:68', NULL, NULL, NULL, NULL),
